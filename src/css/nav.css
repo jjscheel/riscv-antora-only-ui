@@ -53,7 +53,7 @@ html.is-clipped--nav {
 .nav-menu {
   min-height: 100%;
   /* padding: 0.5rem 0.75rem; */
-  padding-right: 2px;
+  padding-right: 1.5rem;
   line-height: var(--nav-line-height);
   position: relative;
 }
