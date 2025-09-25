@@ -10,7 +10,6 @@
     <div class="sidebar-links">
       {{#if page.origin.webUrl}}
         <a href="{{page.origin.webUrl}}/issues" target="_blank" title="Issues">
-      {{#if (and page.fileUri (not env.CI))}}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             height="24"
