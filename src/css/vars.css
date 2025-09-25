@@ -59,15 +59,15 @@
   --admonition-background: var(--color-accent-1);
   --admonition-label-font-weight: var(--body-font-weight-bold);
   --admonition-font-color: #f0f0f0;
-  --caution-color: #561164;
+  --caution-color: #60269e;
   --caution-on-color: var(--admonition-font-color);
-  --important-color: #960000;
+  --important-color: #cb007b;
   --important-on-color: var(--admonition-font-color);
-  --note-color: #015785;
+  --note-color: #003262;
   --note-on-color: var(--admonition-font-color);
-  --tip-color: #3e6b1f;
+  --tip-color: #0a6b7c;
   --tip-on-color: var(--admonition-font-color);
-  --warning-color: #bd7400;
+  --warning-color: #fdb515;
   --warning-on-color: var(--admonition-font-color);
   --admonition-font-weight: 500;
 
@@ -274,11 +274,11 @@ html.dark-theme {
 
   /* Admonitions */
   --admonition-font-color: #f0f0f0;
-  --caution-color: #603668;
-  --important-color: #924040;
-  --note-color: #355463;
-  --tip-color: #4d6340;
-  --warning-color: #967745;
+  --caution-color: #60269e;
+  --important-color: #cb007b;
+  --note-color: #003262;
+  --tip-color: #0a6b7c;
+  --warning-color: #fdb515;
   --admonition-font-weight: 500;
 
   /* Highlight JS (colors based on https://github.com/primer/github-syntax-dark) */
