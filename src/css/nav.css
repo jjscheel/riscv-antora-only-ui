@@ -474,10 +474,17 @@ body.nav-sm .nav-panel-menu {
   fill: currentColor;      /* match text color */
 }
 
-.nav-home-icon {
-  display: inline-block;
-  width: 1.2em;        /* slightly bigger if you want it more prominent */
+/* Home icon styling */
+.navbar-item.home .nav-home-icon {
+  display: inline-block;      /* inline with other text */
+  width: 1.2em;               /* scales with nav font size */
   height: 1.2em;
-  vertical-align: middle;
-  fill: currentColor;  /* inherits link color, including hover */
+  vertical-align: middle;     /* align with nav text baseline */
+  fill: currentColor;         /* matches nav text color, hover included */
 }
+
+/* Remove chevron if any parent rules try to add it */
+.navbar-item.home .navbar-link::after {
+  content: none;
+}
+
