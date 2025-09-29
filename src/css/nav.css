@@ -487,3 +487,14 @@ body.nav-sm .nav-panel-menu {
 .navbar-item.home .navbar-link::after {
   content: none;
 }
+
+
+/* Default = light mode */
+#riscvlogo {
+  content: url("../img/risc-v_logo.svg");
+}
+
+/* Dark mode (your theme toggles html.dark-theme) */
+html.dark-theme #riscvlogo {
+  content: url("../img/risc-v_logo_white.svg");
+}
