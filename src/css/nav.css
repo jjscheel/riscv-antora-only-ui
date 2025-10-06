@@ -251,6 +251,10 @@ button.browse-version {
   padding-top: 4px;
 }
 
+button.version:hover:not(:disabled) {
+  background-color: #fdda64;
+}
+
 button.browse-version svg {
   fill: var(--body-font-color);
 }
