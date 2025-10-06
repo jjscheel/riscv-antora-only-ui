@@ -49,7 +49,7 @@
           </a>
           <ul id="pdfDropdownMenu" class="dropdown-menu" hidden>
             {{#each page.attributes.pdf_list}}
-              <li style="padding-left: 0px;"><a href="{{url}}" class="dropdown-item" target="_blank" rel="noopener noreferrer" style="color: #000000; padding-left: 0;" download>{{text}} </a></li>
+              <li style="padding-left: 0px;"><a href="{{url}}" class="dropdown-item" target="_blank" rel="noopener noreferrer" style="color: #003262;" download>{{text}}</a></li>
             {{/each}}
           </ul>
         </div>
@@ -64,9 +64,9 @@
       const expanded = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', !expanded);
       menu.hidden = expanded;
-      if (!expanded) {
+      {{!-- if (!expanded) {
         menu.querySelector('.dropdown-item')?.focus();
-      }
+      } --}}
     });
 
     // Close dropdown when clicking outside
@@ -97,16 +97,16 @@
           .dropdown-menu {
             position: absolute;
             top: 100%;
-            left: 0;
-            background: #f9f9f9;
-            border: 1px solid #000000;
-            border-radius: 4px;
-            min-width: 180px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            background: #ffffff;
+            min-width: 100px;
             z-index: 1000;
             list-style-type: none;
           }
           .dropdown-item {
-            padding-left: 0px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
             display: block;
             color: #000000;
             text-decoration: none;
@@ -114,13 +114,10 @@
             user-select: none;
           }
           .dropdown-item:hover{
-            background-color: #cccccc;
+            background-color: #fdb515;
             outline: none;
           }
-          .dropdown-item:focus {
-            background-color: #cccccc;
-            outline: none;
-          }
+
           .chevron {
             stroke-width: 2.5;
             transition: transform 0.2s ease;
