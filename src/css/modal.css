@@ -1,3 +1,4 @@
+/* Overlay */
 .modal__overlay {
   position: fixed;
   top: 0;
@@ -6,13 +7,21 @@
   bottom: 0;
   background: rgba(235, 242, 242, 0.8);
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* default center for small screens */
+  padding: 1.5rem;
 }
 
+/* Modal container */
 .modal__container {
   background-color: var(--body-background-color);
-  width: 100%;
-  margin: 0 auto;
-  height: auto;
+  max-width: 500px;   /* cap width */
+  width: auto;        /* don’t stretch full width */
+  padding: 2rem;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 0;          /* positioning handled by overlay flex */
 }
 
 .modal__content {
@@ -122,11 +131,9 @@
 
 @media screen and (min-width: 1024px) {
   .modal__overlay {
-    padding: 3rem;
+    justify-content: flex-start; /* align left side */
   }
   .modal__container {
-    max-width: 600px;
-    min-width: 50%;
-    width: auto;
+    margin-left: 10%; /* nudge toward center */
   }
 }

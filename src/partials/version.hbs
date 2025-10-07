@@ -3,7 +3,7 @@
         <div class="modal__container" role="dialog" aria-modal="true">
             <main class="modal__content" id="modal-versions-content">
               <button data-micromodal-close class="modal-versions-close">
-                <svg width="28px" height="28px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"/></g></svg>
+                <svg width="10px" height="10px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><defs><style>.cls-1h{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross"><line class="cls-1h" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1h" x1="7" x2="25" y1="25" y2="7"/></g></svg>
               </button>
                   <ul class="nav-versions">
                     {{#each (versionTree site.components @root.page)}}
@@ -24,7 +24,7 @@
                           {{> version-nav ./versionTree.stable}}
                         </div>
                         {{/if}}
-
+{{!-- 
                         {{~#if (notEmpty ./versionTree.preview)}}
                         <div class="version-item">
                           <div>
@@ -48,7 +48,7 @@
                           {{> version-nav ./versionTree.snapshot}}
                         </div>
                         {{/if}}
-                        
+                         --}}
                       </li>
                     {{/each}}
                   </ul>
