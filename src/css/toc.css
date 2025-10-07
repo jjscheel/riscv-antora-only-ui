@@ -87,3 +87,55 @@
 .toc .toc-menu .is-hidden-toc {
   display: none !important;
 }
+
+/* Dropdown wrapper */
+.dropdown-toc {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown container with shadow and padding */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  padding: 0.5rem 1rem;        /* top/bottom | left/right spacing inside the box */
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  list-style: none;
+  min-width: 150px;
+  max-width: 90vw;
+  box-sizing: border-box;      /* ensures padding stays inside width */
+}
+
+/* Dropdown items */
+.dropdown-item {
+  display: inline-block;       /* shrink to text width */
+  padding: 0.35rem 0.5rem;     /* vertical | horizontal padding for hover */
+  margin: 0;                    /* remove default margins */
+  line-height: 1.5rem;          /* vertical centering of text */
+  font-weight: bold;            /* bold text */
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;           /* slightly rounded hover edges */
+  text-align: left;             /* align all items consistently */
+}
+
+/* Hover highlights only behind text */
+.dropdown-item:hover {
+  background-color: #fdb515;
+  color: #000;
+}
+
+/* Chevron rotation (if you have one) */
+.chevron {
+  stroke-width: 2.5;
+  transition: transform 0.2s ease;
+}
+
+[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
