@@ -1,11 +1,11 @@
 {
-  "name": "antora-ui-spring",
-  "description": "Produces the UI bundle for projects on docs.spring.io that are built with Antora",
-  "homepage": "https://docs.spring.io",
+  "name": "antora-ui-riscv",
+  "description": "Produces the UI bundle for projects on docs.riscv.org that are built with Antora",
+  "homepage": "https://docs.riscv.org",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/spring-io/antora-ui-spring"
+    "url": "https://github.com/riscv/antora-ui-riscv"
   },
   "scripts": {
     "start": "gulp preview",
@@ -20,9 +20,7 @@
   "devDependencies": {
     "@asciidoctor/core": "~2.2",
     "@asciidoctor/tabs": "1.0.0-beta.6",
-    "@docsearch/js": "3",
     "@springio/asciidoctor-extensions": "1.0.0-alpha.8",
-    "algoliasearch": "4",
     "autoprefixer": "~10.4",
     "browser-pack-flat": "~3.5",
     "browserify": "~17.0",
@@ -70,7 +68,6 @@
     "vinyl-fs": "~3.0"
   },
   "dependencies": {
-    "@algolia/client-search": "^4.17.0",
     "@primer/octicons": "^19.8.0",
     "init": "^0.1.2"
   }
