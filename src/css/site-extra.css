@@ -1,3 +1,8 @@
+/* Make version popup bullets white in dark mode */
+html.dark-theme ul.versions > li.version {
+  color: #fff;
+  list-style-type: disc;
+}
 .navbar-brand .navbar-item + .navbar-item {
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
