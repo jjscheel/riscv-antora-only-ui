@@ -138,6 +138,6 @@
   transition: transform 0.2s ease;
 }
 
-[aria-expanded="true"] .chevron {
+[aria-expanded="false"] .chevron {
   transform: rotate(180deg);
 }
