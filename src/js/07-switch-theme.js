@@ -13,18 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-;(function () {
+; (function () {
   'use strict'
 
   activateSwitch(document.getElementById('switch-theme-checkbox'))
-
-  function activateSwitch (control) {
+  const searchInput = document.getElementById('search-input')
+  console.log(' searchInput ', searchInput)
+  searchInput.addEventListener('loadedindex', (e) => {
+    console.log('Search index loaded', e)
+  })
+  function activateSwitch(control) {
     if (!control) return
     control.checked = document.documentElement.classList.contains('dark-theme')
     control.addEventListener('change', onThemeChange.bind(control))
   }
 
-  function onThemeChange () {
+  function onThemeChange() {
     document.documentElement.classList.toggle('dark-theme', this.checked)
     document.documentElement.setAttribute('data-theme', this.checked ? 'dark' : 'light')
     saveTheme(this.checked ? 'dark' : 'light')
@@ -35,7 +39,7 @@
     }
   }
 
-  function saveTheme (theme) {
+  function saveTheme(theme) {
     window.localStorage && window.localStorage.setItem('theme', theme)
   }
 })()
