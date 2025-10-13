@@ -48,7 +48,7 @@
   --scrollbar-thumb-color: silver;
   --scrollbar_hover-thumb-color: silver;
   --mark-background-color: #fdb515;
-  --selected-background-color: #191e1e;
+  --selected-background-color: #003262;
   --caption-font-style: italic;
 
   /* Layout */
@@ -136,7 +136,7 @@
   --navbar-button-font-color: var(--body-font-color);
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--body-background-color);
-  --navbar-menu-font-color: var(--body-font-color);
+  --navbar-menu-font-color: #003262;
   --navbar-menu_hover-background: var(--navbar-menu-background);
 
   /* Nav */
@@ -167,7 +167,7 @@
   --doc-line-height: 1.6;
   --doc-margin: 0 auto;
   --doc-margin--desktop: 0 2rem;
-  --heading-font-color: var(--body-font-dark-color);
+  --heading-font-color: #003262;
   --heading-font-weight: 600;
   --alt-heading-font-weight: 600;
   --section-divider-color: var(--panel-border-color);
