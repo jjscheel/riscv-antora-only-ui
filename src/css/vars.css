@@ -136,7 +136,7 @@
   --navbar-button-font-color: var(--body-font-color);
   --navbar-menu-border-color: var(--panel-border-color);
   --navbar-menu-background: var(--body-background-color);
-  --navbar-menu-font-color: #003262;
+  --navbar-menu-font-color: var(--body-font-color);
   --navbar-menu_hover-background: var(--navbar-menu-background);
 
   /* Nav */
