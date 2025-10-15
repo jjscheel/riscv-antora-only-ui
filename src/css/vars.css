@@ -42,8 +42,8 @@
   --body-font-color: #191e1e;
   --body-font-light-color: #273030;
   --body-font-dark-color: #141818;
-  --link-font-color: #1565c0;
-  --link_hover-font-color: #104d92;
+  --link-font-color: #0094FF;
+  --link_hover-font-color: #003262;
   --code-link-font-color: var(--link-font-color);
   --scrollbar-thumb-color: silver;
   --scrollbar_hover-thumb-color: silver;
@@ -203,7 +203,7 @@
   --footer-line-height: var(--doc-line-height);
   --footer-background: var(--body-background-color);
   --footer-font-color: var(--color-gray-30);
-  --footer-link-font-color: #111;
+  --footer-link-font-color: #0094FF;
 
   /* Dimensions and Positioning */
   --navbar-height: calc(83 / var(--rem-base) * 1rem);
@@ -266,8 +266,8 @@ html.dark-theme {
   --body-font-color: #bbbcbe;
   --body-font-light-color: #abacaf;
   --body-font-dark-color: #cecfd1;
-  --link-font-color: #086dc3;
-  --link_hover-font-color: #107ddd;
+  --link-font-color: #0094FF;
+  --link_hover-font-color: #003262;
   --scrollbar-thumb-color: #5f5f5f;
   --mark-background-color: #fdb515;
   --selected-background-color: #e5e5e5;
@@ -293,7 +293,7 @@ html.dark-theme {
   --highlight-tag-font-color: #fdb515;
   --highlight-tag-attribute-font-color: #b392f0;
   --highlight-type-font-color: #b392f0;
-  --highlight-link-font-color: #1565c0;
+  --highlight-link-font-color: #0094FF;
   --highlight-addition-font-color: #fdb515;
   --highlight-deletion-font-color: #f6f8fa;
   --highlight-regex-font-color: #79b8ff;
