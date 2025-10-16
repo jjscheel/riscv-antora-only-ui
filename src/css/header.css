@@ -332,7 +332,6 @@ body {
 .navbar-menu a.navbar-item:hover,
 .navbar-menu .navbar-link:hover {
   font-weight: bold;
-  color: #003262;
 }
 
 .navbar-dropdown a.navbar-item {
@@ -360,3 +359,4 @@ body {
   width: 12px;
   margin-left: 10px;
 }
+

@@ -196,12 +196,13 @@ html.is-clipped--nav {
 
 .dark-theme .nav-item-toggle:hover + .nav-link,
 .dark-theme .nav-item-toggle:hover + .nav-text {
+  color: #0094FF;
   background: #262a2d;
 }
 
 .dark-theme .nav-link:hover,
 .dark-theme .nav-text:hover {
-  color: #1f98ff;
+  color: #0094FF;
   background: #262a2d;
 }
 
@@ -501,3 +502,9 @@ body.nav-sm .nav-panel-menu {
 html.dark-theme #riscvlogo {
   content: url("../img/risc-v_logo_white.svg");
 }
+
+html.dark-theme .navbar-link:hover,
+html.dark-theme .navbar-link:focus {
+  color: #fafafa;
+}
+
