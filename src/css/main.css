@@ -214,6 +214,10 @@ html.dark-theme .sidebar-links a:hover svg {
   padding-bottom: 10px;
 }
 
+html.dark-theme #modal-versions .nav-versions a.title {
+    color: #fff;
+}
+
 #modal-versions .version-toggle {
   position: relative;
   border: none;
